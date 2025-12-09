@@ -75,7 +75,6 @@ print("Average ratings by age group:")
 print(age_group_to_avg_rating)
 print(largest_avg_rating)
 
-"""Problem 1"""
 
 # Get rewards for a given arm (age group)
 def get_reward(arm):
@@ -242,7 +241,6 @@ plot_avg_with_error_bars(ts_regrets, 'TS Algorithm')
  So the variance of ETC should be the largest. eTC occasionally has a line that deviates from the others.
 This could be because the wrong ARM was selected."""
 
-"""Problem 2"""
 
 # Function to plot results
 def plot_results_for_n(n_values, n_experiments, n_arm, B):
@@ -337,7 +335,6 @@ or maybe it and UCB are showing logarithmic regret behavior at the same time.
 When n is small, the performance is similar. Although n becomes larger, the advantage of TS algorithm becomes more and more obvious.
 """
 
-"""Problem 3"""
 
 n_experiments=100
 n_round=50000
@@ -358,7 +355,6 @@ plot_avg_with_error_bars(etc_regrets, 'ETC Algorithm')
 ETC performs better when mk equals 2000 or 5000. At this point ETC is better than UCB but not as good as TS
 """
 
-"""Problem 4"""
 def UCB_l_algorithm(n_round, n_arm, l, B=4):
     cumulative_regret = np.zeros(n_round)
     arm_counts = np.zeros(n_arm)
@@ -422,7 +418,6 @@ plot_avg_with_error_bars(ucb_regrets, 'UCB Algorithm, l=4')
 #l=4 has the worst performance, then asymptotic UCB, then l=2, and the best performance when l=1.
 
 """
-"""Problem 5"""
 n_experiments=100
 n_round=1000000
 exploration_round=100000
